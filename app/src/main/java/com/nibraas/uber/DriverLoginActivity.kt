@@ -12,7 +12,9 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlin.math.log
 
-class DriverLoginActivity : AppCompatActivity() {
+class
+
+DriverLoginActivity : AppCompatActivity() {
 
     private lateinit var email: EditText
     private lateinit var password: EditText

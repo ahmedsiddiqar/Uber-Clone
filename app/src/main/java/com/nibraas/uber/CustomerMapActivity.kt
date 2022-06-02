@@ -98,7 +98,7 @@ class CustomerMapActivity : AppCompatActivity(),
                     requestBol = true
 
                     val userID = FirebaseAuth.getInstance().currentUser?.uid
-                    val databaseReference = FirebaseDatabase.getInstance().reference.child("customerRequests")
+                    val databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://ipbjek2-default-rtdb.asia-southeast1.firebasedatabase.app/").child("customerRequests")
 
                     GeoFire(databaseReference).setLocation(userID,
                         GeoLocation(lastLocation.latitude, lastLocation.longitude)) { _, _ -> }

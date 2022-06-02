@@ -45,7 +45,7 @@ class CustomerLoginActivity : AppCompatActivity() {
                         Toast.makeText(this, it.result.toString(), Toast.LENGTH_SHORT).show()
                     } else {
                         val userId = auth.currentUser!!.uid
-                        FirebaseDatabase.getInstance().reference
+                        FirebaseDatabase.getInstance().getReferenceFromUrl("https://ipbjek2-default-rtdb.asia-southeast1.firebasedatabase.app/")
                             .child("Users")
                             .child("Customers")
                             .child(userId)
